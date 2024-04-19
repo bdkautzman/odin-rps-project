@@ -48,5 +48,11 @@ function playRPS(playerSelection, computerSelection) {
 // Plays a five round game of RPS, keeps score and declares
 // winner or loser at the end
 function playGame() {
-
+    for(let i = 0; i < 5; i++) {
+        let userChoice = prompt("What do you play? (rock, paper, scissors): ")
+        console.log(playRPS(userChoice, getComputerChoice()));
+    }
 }
+
+// Run the game!
+playGame();
